@@ -1,6 +1,6 @@
 {
   "name": "cypress-split-testcases",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Cypress plugin to split test cases across multiple spec files for parallelization",
   "main": "src/index.js",
   "scripts": {
