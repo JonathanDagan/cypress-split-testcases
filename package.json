@@ -1,0 +1,24 @@
+{
+  "name": "cypress-split-testcases",
+  "version": "1.0.0",
+  "description": "Cypress plugin to split test cases across multiple spec files for parallelization",
+  "main": "src/index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "cypress",
+    "cypress-io",
+    "cypress-plugin",
+    "cypress-preprocessor"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanDagan/cypress-split-testcases.git"
+  },
+  "author": "Jonathan Dagan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JonathanDagan/cypress-split-testcases/issues"
+  },
+  "homepage": "https://github.com/JonathanDagan/cypress-split-testcases#readme"
+}
