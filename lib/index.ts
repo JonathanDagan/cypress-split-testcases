@@ -61,6 +61,8 @@ async function generateTestFiles(testPath: string) {
     });
 }
 
+// const TEST_PATH = '';
+// 
 // (async () => {
-
+//     // generateTestFiles(TEST_PATH)
 // })
