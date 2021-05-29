@@ -1,24 +1,40 @@
 {
-  "name": "cypress-split-testcases",
-  "version": "0.0.1",
-  "description": "Cypress plugin to split test cases across multiple spec files for parallelization",
-  "main": "src/index.js",
-  "scripts": {
-  },
-  "keywords": [
-    "cypress",
-    "cypress-io",
-    "cypress-plugin",
-    "cypress-preprocessor"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JonathanDagan/cypress-split-testcases.git"
-  },
-  "author": "Jonathan Dagan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JonathanDagan/cypress-split-testcases/issues"
-  },
-  "homepage": "https://github.com/JonathanDagan/cypress-split-testcases#readme"
+    "name": "cypress-split-testcases",
+    "version": "0.0.1",
+    "description": "Cypress plugin to split test cases across multiple spec files for parallelization",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "npx ts-node lib/index.ts",
+        "lint": "npx prettier -w ."
+    },
+    "keywords": [
+        "cypress",
+        "cypress-io",
+        "cypress-plugin",
+        "cypress-preprocessor"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JonathanDagan/cypress-split-testcases.git"
+    },
+    "author": "Jonathan Dagan",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/JonathanDagan/cypress-split-testcases/issues"
+    },
+    "homepage": "https://github.com/JonathanDagan/cypress-split-testcases#readme",
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.11",
+        "@types/lodash": "^4.14.170",
+        "husky": "^6.0.0",
+        "ts-node": "^10.0.0"
+    },
+    "dependencies": {
+        "@types/yargs": "^17.0.0",
+        "fs-extra": "^10.0.0",
+        "lodash": "^4.17.21",
+        "path": "^0.12.7",
+        "typescript": "^4.3.2",
+        "yargs": "^17.0.1"
+    }
 }

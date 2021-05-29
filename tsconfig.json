@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "rootDir": ".",
+    "sourceMap": false,
+    "target": "es2019",
+    "lib": ["ES2019"],
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "include": [
+    "lib/**/*.ts"
+  ],
+}
