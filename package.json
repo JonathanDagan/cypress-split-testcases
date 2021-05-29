@@ -24,17 +24,16 @@
     },
     "homepage": "https://github.com/JonathanDagan/cypress-split-testcases#readme",
     "devDependencies": {
-        "@types/fs-extra": "^9.0.11",
-        "@types/lodash": "^4.14.170",
         "husky": "^6.0.0",
         "ts-node": "^10.0.0"
     },
     "dependencies": {
-        "@types/yargs": "^17.0.0",
-        "fs-extra": "^10.0.0",
+        "@types/lodash": "^4.14.170",
+        "@types/fs-extra": "^9.0.11",
         "lodash": "^4.17.21",
+        "fs-extra": "^10.0.0",
+        "inquirer": "^8.1.0",
         "path": "^0.12.7",
-        "typescript": "^4.3.2",
-        "yargs": "^17.0.1"
+        "typescript": "^4.3.2"
     }
 }
