@@ -1,3 +1,1 @@
-export interface SomeInterface {
-    
-}
+export interface SomeInterface {}
