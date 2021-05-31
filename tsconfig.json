@@ -5,7 +5,7 @@
         "lib": ["ES2020"],
         "outDir": "lib",
         "rootDir": "src",
-        "types": ["node", "inquirer", "fs-extra", "path", "lodash"],
+        "types": ["node", "inquirer", "fs-extra", "lodash"],
         "sourceMap": false,
         "moduleResolution": "node",
         "removeComments": true,
