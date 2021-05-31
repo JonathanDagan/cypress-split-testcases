@@ -2,9 +2,9 @@
     "name": "cypress-split-testcases",
     "version": "0.0.2",
     "description": "Cypress plugin to split test cases across multiple spec files for parallelization",
-    "main": "src/index.js",
+    "main": "src/index.ts",
     "scripts": {
-        "start": "npx ts-node lib/index.ts",
+        "start": "npx ts-node src/index.ts",
         "lint": "npx prettier -w ."
     },
     "keywords": [
@@ -28,11 +28,12 @@
         "ts-node": "^10.0.0"
     },
     "dependencies": {
-        "@types/lodash": "^4.14.170",
         "@types/fs-extra": "^9.0.11",
-        "lodash": "^4.17.21",
+        "@types/inquirer": "^7.3.1",
+        "@types/lodash": "^4.14.170",
         "fs-extra": "^10.0.0",
         "inquirer": "^8.1.0",
+        "lodash": "^4.17.21",
         "path": "^0.12.7",
         "typescript": "^4.3.2"
     }

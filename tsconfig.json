@@ -1,19 +1,22 @@
 {
     "compilerOptions": {
-        "outDir": "build",
-        "rootDir": ".",
-        "sourceMap": false,
-        "target": "es2019",
-        "lib": ["ES2019"],
-        "moduleResolution": "node",
+        "target": "es5",
         "module": "commonjs",
+        "lib": ["ES2020"],
+        "outDir": "lib",
+        "rootDir": "src",
+        "types": ["node", "inquirer", "fs-extra", "path", "lodash"],
+        "sourceMap": false,
+        "moduleResolution": "node",
         "removeComments": true,
-        "allowSyntheticDefaultImports": true
+        "allowSyntheticDefaultImports": true,
+        "importHelpers": true
     },
     "ts-node": {
         "compilerOptions": {
             "module": "commonjs"
         }
     },
-    "include": ["lib/**/*.ts"]
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "lib"]
 }
