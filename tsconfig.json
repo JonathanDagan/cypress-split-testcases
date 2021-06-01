@@ -5,7 +5,7 @@
         "lib": ["ES2020"],
         "outDir": "lib",
         "rootDir": "src",
-        "types": ["node", "inquirer", "fs-extra", "lodash"],
+        // "types": ["node", "inquirer", "fs-extra", "lodash"],
         "sourceMap": false,
         "moduleResolution": "node",
         "removeComments": true,
@@ -18,5 +18,5 @@
         }
     },
     "include": ["src/**/*.ts"],
-    "exclude": ["node_modules", "lib"]
+    // "exclude": ["node_modules", "lib"]
 }

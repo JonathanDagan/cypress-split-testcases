@@ -5,7 +5,8 @@
     "main": "src/index.ts",
     "scripts": {
         "start": "npx ts-node src/index.ts",
-        "lint": "npx prettier -w ."
+        "lint": "npx prettier -w .",
+        "build": "yarn tsc"
     },
     "keywords": [
         "cypress",
