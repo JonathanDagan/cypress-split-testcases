@@ -3,30 +3,39 @@ import path from "path";
 import _ from "lodash";
 
 import { Config } from "./config";
-const config = new Config;
-
+const config = new Config();
 
 const defaultCyTestPath = "cypress/integration";
 
 class FileGeneration {
-    constructor(private testPath: string = defaultCyTestPath) {
-
-    }
+    constructor(private testPath: string = defaultCyTestPath) {}
 
     async generateTestFiles() {
         const testCases = (
-            await import(path.join(__dirname, this.testPath, config.TEST_CASES_FILENAME))
+            await import(
+                path.join(__dirname, this.testPath, config.TEST_CASES_FILENAME)
+            )
         ).default;
         const chunks = _.chunk(testCases, config.NUMBER_OF_TEST_CASES);
 
         const specTemplate = fs
             .readFileSync(
-                path.join(__dirname, this.testPath, config.TEMPLATE_FOLDER, config.TEMPLATE_FILENAME)
+                path.join(
+                    __dirname,
+                    this.testPath,
+                    config.TEMPLATE_FOLDER,
+                    config.TEMPLATE_FILENAME
+                )
             )
             .toString();
         const configTemplate = fs
             .readFileSync(
-                path.join(__dirname, this.testPath, config.TEMPLATE_FOLDER, config.CONFIG_FILENAME)
+                path.join(
+                    __dirname,
+                    this.testPath,
+                    config.TEMPLATE_FOLDER,
+                    config.CONFIG_FILENAME
+                )
             )
             .toString();
 
@@ -53,8 +62,5 @@ class FileGeneration {
 
     async createGitIgnore(contents: string) {
         console.log(this.testPath);
-
     }
-
 }
-

@@ -2,7 +2,6 @@ import inquirer from "inquirer";
 
 let options = { a: "a" };
 
-
 (async () => {
     // inquirer.prompt([])
     var { awnser } = await inquirer.prompt([
@@ -10,9 +9,9 @@ let options = { a: "a" };
             type: "list",
             message: "Pick the option you're using:",
             name: "option",
-            choices: Object.keys(options)
-        }
-    ])
+            choices: Object.keys(options),
+        },
+    ]);
     // var promt = inquirer.createPromptModule()
     // promt({
     //     type: "list",
@@ -20,5 +19,4 @@ let options = { a: "a" };
     //     name: "option",
     //     choices: Object.keys(options)
     // })
-
-})()
+})();
